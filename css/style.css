@@ -1,7 +1,142 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+
 header {
   display: flex;
+  padding: 30px 100px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
 }
 
 a {
   text-decoration: none;
+  padding-left: 30px;
+  color: hsl(273, 4%, 51%);
+}
+
+.plans_btn {
+  color: black;
+  padding: 8px 20px;
+  border: 2px solid black;
+  margin-left: 27px;
+}
+
+.plans_btn2 {
+  color: white;
+  padding: 8px 20px;
+  border: 2px solid white;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(256, 26%, 20%);
+  color: #fff;
+  padding: 0 100px;
+}
+
+.txt_container {
+  align-self: center;
+}
+
+.txt_container > h2 {
+  font-size: 64px;
+  font-weight: 400;
+  font-family: 'DM Serif Display', serif;
+  line-height: 62px;
+}
+
+.txt_container > p {
+  line-height: 25px;
+  padding-bottom: 25px;
+}
+
+.img_container {
+  margin-top: 100px;
+  height: 520px;
+  /* width: 540px;
+  height: 650px; */
+  /* object-fit: cover; */
+}
+
+/* .image_intro_desktop {
+  width: 100%;
+  height: 100%;
+} */
+
+.light_line > hr {
+  width: 140px;
+  border: 0;
+  border-top: 1.8px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 270px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+section > h2 {
+  padding: 10px 0;
+  font-size: 69px;
+  font-weight: 400;
+  font-family: 'DM Serif Display', serif;
+}
+
+.box > h6 {
+  font-size: 29px;
+  font-weight: 400;
+  margin-top: -1px;
+  font-family: 'DM Serif Display', serif;
+}
+
+.box > p {
+  margin-top: -54px;
+  line-height: 25px;
+}
+
+.box > img {
+  margin-bottom: 26px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  background-color: hsl(256, 26%, 20%);
+  color: #fff;
+  align-items: center;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+.txt_box {
+  font-size: 49px;
+  font-weight: 400;
+  font-family: 'DM Serif Display', serif;
+  line-height: 49px;
+  padding-left: 90px;
+}
+
+.footer_nav {
+  display: flex;
+}
+
+li {
+  list-style: none;
 }
