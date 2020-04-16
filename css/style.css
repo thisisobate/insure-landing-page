@@ -125,6 +125,10 @@ section > h2 {
   margin-bottom: 160px;
 }
 
+.button {
+  margin-right: 120px;
+}
+
 .txt_box {
   font-size: 49px;
   font-weight: 400;
@@ -133,10 +137,48 @@ section > h2 {
   padding-left: 90px;
 }
 
+footer {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.footer_container {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  /* padding-top: 20px; */
+  padding-bottom: 25px;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials > img {
+  padding-left: 14px;
+}
+
 .footer_nav {
   display: flex;
+  width: 84%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+ul:first-child {
+  margin-left: -38px;
 }
 
 li {
   list-style: none;
+  padding-bottom: 13px;
+}
+
+.first_list {
+  padding-bottom: 32px;
 }
