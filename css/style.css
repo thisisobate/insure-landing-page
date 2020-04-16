@@ -38,11 +38,7 @@ a {
 
 .plans_btn3 {
   color: white;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 20px;
-  padding-right: 0px;
-
+  padding: 8px 20px;
   border: 2px solid white;
 }
 
@@ -86,6 +82,16 @@ main {
   /* width: 540px;
   height: 650px; */
   /* object-fit: cover; */
+}
+
+.img_fit {
+  width: 520px;
+}
+
+.image_intro_desktop {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .intro-pattern-right {
@@ -161,7 +167,6 @@ section > h2 {
   background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  flex: 1;
 }
 
 .button {
@@ -188,6 +193,9 @@ footer {
 }
 
 .footer_container {
+  background-image: url(../images/bg-pattern-footer-desktop.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
   padding-top: 60px;
   padding-bottom: 30px;
   padding-left: 100px;
@@ -233,4 +241,24 @@ li {
   text-transform: uppercase;
   color: hsl(273, 4%, 51%);
   font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .img_fit {
+    width: 100vw;
+  }
+
+  .img_container {
+    margin-top: 10px;
+    height: 520px;
+
+    /* width: 540px;
+    height: 650px; */
+    /* object-fit: cover; */
+  }
 }
