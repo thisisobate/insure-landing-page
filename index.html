@@ -40,7 +40,11 @@
         <img src="images/logo.svg" alt="logo" />
       </div>
 
-      <nav>
+      <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/icon-hamburger.svg" class="menu" alt="navigation" />
+        </a> -->
+
+      <nav id="myLinks">
         <a href="#">
           How we work
         </a>
@@ -56,6 +60,10 @@
           View plans
         </a>
       </nav>
+
+      <!-- <div id="hamburger-menu">
+          <img src="images/icon-hamburger.svg" alt="hamburger menu" />
+        </div> -->
     </header>
 
     <div class="intro">
@@ -201,5 +209,16 @@
       </div> -->
       </div>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById('myLinks');
+        if (x.style.display === 'block') {
+          x.style.display = 'none';
+        } else {
+          x.style.display = 'block';
+        }
+      }
+    </script>
   </body>
 </html>
