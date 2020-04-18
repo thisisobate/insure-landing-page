@@ -48,6 +48,7 @@ main {
   background-color: hsl(256, 26%, 20%);
   color: #fff;
   padding: 0 100px;
+  margin-top: -270px;
   /* background-image: url(../images/bg-pattern-intro-right-desktop.svg),
     url(../images/bg-pattern-intro-left-desktop.svg);
   background-size: 28%, 15%;
@@ -250,12 +251,101 @@ li {
   font-weight: 700;
 }
 
+#hamburger-menu {
+  display: none;
+}
+
+#overlay-menu-mobile {
+  display: none;
+  overflow-x: hidden;
+}
+
 @media (max-width: 500px) {
+  #myLinks {
+    display: none;
+  }
+
+  header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    z-index: 120;
+    background-color: #fff;
+    padding-left: 25px;
+  }
+
+  .logo {
+    padding-left: 5%;
+  }
+
+  .intro-pattern-right {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: block;
+    position: absolute;
+    opacity: 0.6;
+    transition: opacity 0.2s linear;
+    right: 15px;
+    top: 20px;
+    z-index: 100;
+  }
+
+  #hamburger-menu:hover {
+    opacity: 1;
+  }
+
+  #overlay-menu-mobile {
+    display: block;
+    padding-top: 10%;
+    height: 100vh;
+    width: 0%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: hsl(270, 9%, 17%);
+    transition: width 0.15s ease-in-out;
+    background-image: url(../images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    z-index: 100;
+  }
+
+  #nav-menu-mobile {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  #nav-menu-mobile a {
+    position: relative;
+    display: block;
+    margin: auto;
+    color: var(--white);
+    color: hsl(0, 0%, 98%);
+    padding: 1rem 0rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    width: 90%;
+  }
+
+  #nav-menu-mobile a:hover {
+    border: 2px solid var(--white);
+    border: 2px solid hsl(0, 0%, 98%);
+  }
+
   main {
     display: flex;
     flex-direction: column-reverse;
     justify-content: none;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 110px;
+    padding-bottom: 0;
   }
 
   .img_fit {
@@ -318,7 +408,6 @@ li {
   }
 
   .box {
-    border: 2px solid red;
     text-align: center;
     margin-bottom: 40px;
   }
@@ -332,6 +421,11 @@ li {
     flex-direction: column;
     height: 400px;
     align-items: center;
+    background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+    margin-top: 90px;
   }
 
   .button_section {
